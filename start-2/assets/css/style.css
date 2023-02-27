@@ -179,7 +179,7 @@ footer a {
     color: fuchsia;
 }
 
-@media only screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
     h1 {
         font-size: 4.5rem;
         line-height: 1.2;
@@ -193,12 +193,15 @@ footer a {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+    body{
+        font-size: 1.5rem
+    }
     header {
         text-align: start;
         padding: 1rem 2rem;
     }
-    header div{
+    header div {
         display: inline-block;
     }
     header div img{
@@ -206,11 +209,16 @@ footer a {
     }
     header div p{
         line-height: 4rem;
-        float: right;
+        float:right;
+        margin-top: 1rem;
     }
     header nav{
         line-height: 4rem;
         float: right;
+        margin-top: 1rem;
+    }
+    header nav ul li{
+        display: inline-block;
     }
     table{
         width: 65%;
@@ -220,27 +228,27 @@ footer a {
         height: 13rem;
     }
     section {
+        border-radius: 5%;
         width: 50%;
         height: 13rem;
         float: right;
     }
-    input {
-        padding: 0.6rem;
-    }
-    button {
-        padding: 0.6rem;
-    }
+
     aside {
         text-align: center;
     }
     aside > div {
-        width: 35%;
-        text-align: start;
-        padding: 1.2em;
-        margin-inline: -2px;
         display: inline-block;
+        width: 32%;
+        margin-inline: -2px;
+        text-align: start;
+        padding: 2.5rem;
     }
  }
 
- 
+@media print {
+    header, footer, aside, iframe, section {
+        display: none;
+    }
+}
 
