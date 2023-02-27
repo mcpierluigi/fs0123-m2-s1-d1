@@ -178,3 +178,69 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+@media only screen and (min-width: 576px) {
+    h1 {
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+    article h2 {
+        font-weight: normal;
+    }
+    table {
+        margin-block: 8rem;
+        margin-inline: auto;  
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        text-align: start;
+        padding: 1rem 2rem;
+    }
+    header div{
+        display: inline-block;
+    }
+    header div img{
+        margin: 0;
+    }
+    header div p{
+        line-height: 4rem;
+        float: right;
+    }
+    header nav{
+        line-height: 4rem;
+        float: right;
+    }
+    table{
+        width: 65%;
+    }
+    iframe{
+        width: 50%;
+        height: 13rem;
+    }
+    section {
+        width: 50%;
+        height: 13rem;
+        float: right;
+    }
+    input {
+        padding: 0.6rem;
+    }
+    button {
+        padding: 0.6rem;
+    }
+    aside {
+        text-align: center;
+    }
+    aside > div {
+        width: 35%;
+        text-align: start;
+        padding: 1.2em;
+        margin-inline: -2px;
+        display: inline-block;
+    }
+ }
+
+ 
+
